@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<!-- Frame레이아웃은 == 액자형 모든 뷰나 위젯이
+   동일한 위치에서 겹쳐질수있음.
+
+
+  btn이라는 id를 가진 버튼을 클릭했을때
+  로그에 버튼이 클릭되었습니다가 출력될수있게
+  MainActivity.java를 작업해보기
+
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="이전 이미지"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn2"
+            android:text="다음 이미지"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    <ImageView
+        android:id="@+id/imgv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img1"/>
+    <ImageView
+        android:id="@+id/imgv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img2"/>
+    <ImageView
+        android:id="@+id/imgv3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img3"/>
+    <ImageView
+        android:id="@+id/imgv4"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img4"/>
+    </FrameLayout>
+
+
+
+</LinearLayout>

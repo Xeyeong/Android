@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+<!-- weight : 무게 , 해당하는 숫자의 비율로
+    넓이 또는 높이를 나눈다. ※
+    식 : 모든 자식 뷰의 weight / 현재 weight
+    weight속성 사용 시 wrap_content 또는 0dp를 주면
+    자동으로 비율을 맞출수있음.
+-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="#123"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="#456"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="#4D1174"/>
+
+
+</LinearLayout>

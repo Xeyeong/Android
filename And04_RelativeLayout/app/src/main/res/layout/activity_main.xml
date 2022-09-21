@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="BTN1"
+        android:layout_width="100dp"
+        android:backgroundTint="#033B73"
+        android:layout_centerInParent="true"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:text="BTN2"
+        android:backgroundTint="#46604B"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_alignTop="@id/btn1"
+        />
+    <Button
+        android:text="BTN3"
+        android:backgroundTint="#45472F"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_alignTop="@id/btn1"
+        />
+    <Button
+        android:text="BTN4"
+        android:backgroundTint="#5C1935"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btn1"
+        android:layout_alignLeft="@id/btn1"
+        />
+</RelativeLayout>

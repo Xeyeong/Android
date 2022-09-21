@@ -1,0 +1,8 @@
+
+        //일단 따라서해보기. (외우거나 따로 공부는 필요없음)
+        //Context부분은 6번 프로젝트에서 더 심화.
+        Button button = new Button(this);// ctrl + p
+        button.setText("자바코드로 디자인");
+        ConstraintLayout layout = new ConstraintLayout(this);
+        layout.addView(button);// <consLayout>  <Button / > </consLayout>
+        setContentView(layout);
