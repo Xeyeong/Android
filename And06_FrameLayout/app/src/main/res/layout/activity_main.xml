@@ -5,65 +5,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-<!-- Frame레이아웃은 == 액자형 모든 뷰나 위젯이
-   동일한 위치에서 겹쳐질수있음.
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-
-  btn이라는 id를 가진 버튼을 클릭했을때
-  로그에 버튼이 클릭되었습니다가 출력될수있게
-  MainActivity.java를 작업해보기
-
--->
-
+    <!-- Frame레이아웃은 액자형 모든 뷰나 위젯이
+     동일한 위치에서 겹쳐질수있음
+     btn이라는 id를 가진 버튼을 클릭했을때
+     로그에 버튼이 클릭되었습니다가 출력될수있게
+     MainActivity.java를 작업해보기
+     -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btn"
+            android:backgroundTint="#3F51B5"
+            android:text="이전"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-
-    <Button
-        android:id="@+id/btn1"
-        android:text="이전 이미지"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
         <Button
             android:id="@+id/btn2"
-            android:text="다음 이미지"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:backgroundTint="#3E7188"
+            android:text="다음"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
     <FrameLayout
+        android:layout_weight="9"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9">
+        android:layout_height="0dp">
+
     <ImageView
-        android:id="@+id/imgv1"
+        android:id="@+id/img1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img1"/>
+        android:src="@drawable/kang"
+        />
+
     <ImageView
-        android:id="@+id/imgv2"
+        android:id="@+id/img2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img2"/>
+        android:src="@drawable/img1"
+        />
+
     <ImageView
-        android:id="@+id/imgv3"
+        android:id="@+id/img3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img3"/>
+        android:src="@drawable/img2"
+        />
+
     <ImageView
-        android:id="@+id/imgv4"
-        android:scaleType="fitXY"
+        android:id="@+id/img4"
+        android:scaleType="fitEnd"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img4"/>
+        android:src="@drawable/img3"
+        />
     </FrameLayout>
-
-
-
 </LinearLayout>
