@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- style == css 미리 어떤 크기나 색상 등을 만들어놓고 사용하는 기법.
+         ex) web(a태그 모양을 버튼처럼 만들어놓고 클래스 로딩을 이용해서 재활용)
+      -->
+    <dimen name="jsy_tv_width">100dp</dimen>
+    <dimen name="jsy_tv_height">80dp</dimen>
+
+    <color name="jsy_tv_color">#123456</color>
+    <!-- 위젯에 한번에 적용가능한 style 태그 이용해보기. 넓이 높이 색상 등등을 미리 하나의 name으로 묶어서 사용하는 기법 -->
+        <style name="jsy_tv_style">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:background">#123456</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+    <style name="jsy_tv_style2" parent="jsy_tv_style">
+        <item name="android:textSize">20dp</item>
+    </style>
+<!--iphone -->
+    <style name="iphone_Setting">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="iphone_basic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">#5C5C5C</item>
+    </style>
+
+    <style name="iphone_basic1" parent="iphone_basic">
+
+    </style>
+    <style name="iphone_font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <!-- app_name 부분은 전역변수로 Manifest 또는 다른 설정파일들에서 가져다가 사용하기 때문에
+         절대 지우지말고, 수정해서 사용하기
+         ex) 앱이름을(프로젝트) Test라고 만들었는데 출시 할때 => 당근마켓이라는 이름이 필요함
+         해당하는 프로젝트의 values>string.xml만 수정하면 된다.-->
+    <string name="app_name">당근마켓</string>
+    <string name="app_version">컷</string>
+</resources>

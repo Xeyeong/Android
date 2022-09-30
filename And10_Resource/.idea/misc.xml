@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.3609375" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/drawable/ic_heart.xml" value="0.3609375" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/drawable/shape_ex1.xml" value="0.3609375" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/drawable/shape_ex2.xml" value="0.3609375" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/layout/activity_main.xml" value="3.0" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/layout/color_ex1_ln.xml" value="0.42661691542288555" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/layout/dimen_ex1.xml" value="0.376425855513308" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/layout/iphone.xml" value="0.33" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/layout/shape_ex1_ln.xml" value="0.5" />
+        <entry key="..\:/Study_Android/WorkSpace/And10_Resource/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3609375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

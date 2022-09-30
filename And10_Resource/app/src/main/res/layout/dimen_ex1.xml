@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="@dimen/jsy_tv_width"
+        android:layout_height="@dimen/jsy_tv_height"
+        android:background="@color/color_jsy"
+        android:text="1880.05.02 int 탄생"/>
+    <TextView
+        style="@style/jsy_tv_style"
+        android:text="ㅇㅁㅇ"/>
+    <TextView
+        style="@style/jsy_tv_style2"
+        android:text="ㅇㅁㅇ"/>
+
+
+</LinearLayout>
