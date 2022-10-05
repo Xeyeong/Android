@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.and14_allview.gridview.GridFragment;
+import com.example.and14_allview.kym_recview.KymRecvFragment;
 import com.example.and14_allview.listview.ListFragment;
+import com.example.and14_allview.recyclerview.RecFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.container , new GridFragment()).commit();
             }
         });
-
+        findViewById(R.id.btn_recview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.container , new RecFragment()).commit();
+            }
+        });
+        findViewById(R.id.btn_kym).setOnClickListener(v -> {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new KymRecvFragment()).commit();
+        });
     }
 }

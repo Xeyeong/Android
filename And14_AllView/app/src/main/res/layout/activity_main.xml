@@ -30,6 +30,22 @@
         android:text="그리드뷰"
         android:layout_margin="3dp"
         />
+        <Button
+            android:id="@+id/btn_recview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#825427"
+            android:text="리사이클러뷰"
+            android:layout_margin="3dp"
+            />
+        <Button
+            android:id="@+id/btn_kym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C9108"
+            android:text="연습"
+            android:layout_margin="3dp"
+            />
     </LinearLayout>
     <FrameLayout
         android:layout_weight="1"

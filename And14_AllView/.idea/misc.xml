@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/fragment_grid.xml" value="0.21770833333333334" />
+        <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/fragment_kym_recv.xml" value="0.264" />
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/fragment_list.xml" value="0.4" />
+        <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/fragment_rec.xml" value="0.1" />
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/item_gridview.xml" value="0.21770833333333334" />
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/item_listview.xml" value="0.2" />
+        <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/item_melon.xml" value="0.264" />
+        <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/layout/item_recv.xml" value="0.6" />
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23802083333333332" />
         <entry key="..\:/Study_Android/WorkSpace/And14_AllView/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23802083333333332" />
       </map>
