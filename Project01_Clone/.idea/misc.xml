@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/btm_nav_item_select.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/ic_baseline_chat_bubble_outline_24.xml" value="0.18692543411644535" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.18692543411644535" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/ic_baseline_people_alt_24.xml" value="0.18692543411644535" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/ic_baseline_people_outline_24.xml" value="0.18692543411644535" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.18692543411644535" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.18692543411644535" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/layout/activity_user.xml" value="0.2" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/layout/fragment_user.xml" value="0.4" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/layout/item_recv.xml" value="0.15104166666666666" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/layout/item_recv_user.xml" value="0.536" />
+        <entry key="..\:/Study_Android/WorkSpace/Project01_Clone/app/src/main/res/menu/btm_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

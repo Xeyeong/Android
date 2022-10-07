@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- 친구 패키지 만들기 (friend) 소문자
+        친구프래그먼트 추가  (대문자시작.)
+        메인액티비티에서 해당하는 프래그먼트 붙이기 처리.
+        -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+<!-- BottomNavigation 별도의 리소스인 메뉴가 필요함.
+    자동완성이 안될때.=> 하드코딩 x 오타가 날 가능성이 높음.
+    이미지뷰를 일단 넣고 src로 해당하는 이미지 경로를 선택한다음 복붙.
+-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:menu="@menu/btm_menu"
+        app:itemIconTint="@drawable/btm_nav_item_select"
+        app:itemTextColor="@drawable/btm_nav_item_select"
+        />
+</LinearLayout>
