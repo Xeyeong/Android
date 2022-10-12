@@ -1,0 +1,20 @@
+Retrofit ※
+- 안드로이드 => 미들웨어(스프링 등등) 접근 시 사용할수있는 방식이 다양함.
+(미들웨어 : Url요청 시 DB에 대신 접근 해서 정보를 다시 요청한 쪽으로 돌려주는 툴,프로젝트)
+안드로이드에서 미들웨어(http,https)에 접근 할때 사용하는 Lib(API): 종류가 다양하지만
+가장 많이 사용됨( 실무 . 종류: Volley ,HttpClient , Retrofit , OkHttp )
+
+-> Spring에서 해줘야할것 ( ResponseBody를 써줌 ) 또는 RestController
+
+
+앱에서 사용해야할것
+1. build.gradle (Module) 라이브러리 추가하기.
+    //http 접속용
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.3.0'
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-scalars
+    implementation group: 'com.squareup.retrofit2', name: 'converter-scalars', version: '2.3.0'
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-gson
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.3.0'
+
+
+

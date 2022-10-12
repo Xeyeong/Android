@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.middle00_retrofit">
+    <!--필수 앱에서 인터넷 기능을 사용하게함. 위험권한이 높은게 아니기때문에 명시만 해주면된다(높은거=>카메라,갤러리)-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--
+        필수
+     일반적으로 앱에서는 http로 요청을 전부 막고있음 (보안)
+        http로 요청을 하게 만드는 설정이 있음. usesClearTextTraffic
+    -->
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Middle00_Retrofit">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
