@@ -64,11 +64,11 @@
             android:textSize="17dp"/>
 
         <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
             android:src="@drawable/img"/>
 
     </RelativeLayout>
@@ -95,47 +95,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/story_recv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_launcher_background"
-        />
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
         </ScrollView>
@@ -143,4 +108,12 @@
         android:layout_width="match_parent"
         android:layout_height="9dp"
         android:background="#181819"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:backgroundTint="#242526"
+        />
+
 </LinearLayout>
