@@ -27,7 +27,7 @@ public class StoryFragment extends Fragment {
         center.addTab(center.newTab().setText("스토리"));
         center.addTab(center.newTab().setText("릴스"));
 
-        View v = inflater.inflate(R.layout.fragment_story, container, false);
+        View v = inflater.inflate(R.layout.fragment_story_reels, container, false);
         return v;
     }
 }

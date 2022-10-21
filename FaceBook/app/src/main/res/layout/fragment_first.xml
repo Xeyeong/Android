@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first.FirstFragment">
+
+    <!-- 헤더 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/plus" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/meg"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/meg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/meg" />
+
+    </RelativeLayout>
+
+    <!-- 무슨생각을 하고 계신가요? -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/header_pf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:layout_toRightOf="@+id/header_pf"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무슨 생각을 하고 계신가요?"
+            android:textColor="#ccc"
+            android:textSize="17dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img"/>
+
+    </RelativeLayout>
+
+    <!-- 밑줄선 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#181819"/>
+
+
+</LinearLayout>
