@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+    <item
+        android:id="@+id/first_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="m1" />
+    <item
+        android:id="@+id/second_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_tv_24"
+        android:title="m2"/>
+
+    <item
+        android:id="@+id/third_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="m3">
+    </item>
+
+    <item
+        android:id="@+id/fourth_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_rss_feed_24"
+        android:title="m4">
+    </item>
+    <item
+        android:id="@+id/five_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        android:title="m5">
+    </item>
+    <item
+        android:id="@+id/six_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="m6">
+    </item>-->
+</menu>

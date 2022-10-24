@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- selector는 위젝 상태에 따라서 색상을 여러개 넣어놓고
+     위젯 상태 변경시 자동으로 넣어논 색을 핸들링 해준다.
+     외우지 않아도 됨!-->
+
+    <item
+        android:state_checked="true"
+        android:color="#FFFFFF"/>
+    <item
+        android:color="#1A3DFF"/>
+
+
+</selector>
