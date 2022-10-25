@@ -6,9 +6,9 @@
 
     <item
         android:state_checked="true"
-        android:color="#FFFFFF"/>
+        android:color="#1043FF"/>
     <item
-        android:color="#1A3DFF"/>
+        android:color="#A9A9A9"/>
 
 
 </selector>

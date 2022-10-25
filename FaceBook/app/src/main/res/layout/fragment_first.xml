@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".first.FirstFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".num1.FirstFragment">
 
     <!-- 헤더 -->
     <RelativeLayout
@@ -67,7 +68,6 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:src="@drawable/img"/>
-
     </RelativeLayout>
 
     <!-- 밑줄선 -->
@@ -75,6 +75,21 @@
         android:layout_width="match_parent"
         android:layout_height="9dp"
         android:background="#181819"/>
+    <!--스토리 / 릴스-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
 
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스토리"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="릴스"/>
+    </com.google.android.material.tabs.TabLayout>
 
 </LinearLayout>

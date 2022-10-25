@@ -26,7 +26,10 @@
         android:id="@+id/btm_menu"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/btm_nav_menu"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        app:itemIconTint="@drawable/btm_nav_item_select"
+        app:itemTextColor="@drawable/btm_nav_item_select"
+        app:backgroundTint="#242526"
         android:layout_height="60dp"/>
 
 </LinearLayout>

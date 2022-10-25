@@ -8,14 +8,41 @@
         android:title="홈"
         app:showAsAction="always"
         android:enabled="true"
-        android:checked="true"
         android:iconTint="@color/white"/>
+
     <item
         android:id="@+id/second_tab"
         android:icon="@drawable/ic_baseline_tv_24"
         android:title="watch"
         app:showAsAction="always"
         android:enabled="true"
-        android:checked="true"
-        />
+        android:iconTint="@color/white" />
+    <item
+        android:id="@+id/third_tab"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="프로필"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/fourth_tab"
+        android:icon="@drawable/ic_baseline_rss_feed_24"
+        android:title="피드"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/five_tab"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        android:title="알림"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:iconTint="@color/white"/>
+<!--    <item
+        android:id="@+id/six_tab"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="메뉴"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:iconTint="@color/white"/>-->
 </menu>
