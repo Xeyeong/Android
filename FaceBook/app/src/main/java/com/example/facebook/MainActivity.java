@@ -5,13 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.example.facebook.num1.FirstFragment;
-import com.example.facebook.num2.SecondFragment;
-import com.example.facebook.num3.ThirdFragment;
-import com.example.facebook.num4.FourthFragment;
-import com.example.facebook.num5.FiveFragment;
+import com.example.facebook.num1_home.HomeFragment;
+import com.example.facebook.num2_Watch.WatchFragment;
+import com.example.facebook.num3_Profile.ProfileFragment;
+import com.example.facebook.num4_Feed.FeedFragment;
+import com.example.facebook.num5_Noti.NotiFiveFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView btn_nav;
     TabLayout tab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,30 +26,29 @@ public class MainActivity extends AppCompatActivity {
 
         btn_nav = findViewById(R.id.btm_menu);
 
-        FirstFragment fragment = new FirstFragment();
+        HomeFragment fragment = new HomeFragment();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new FirstFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new HomeFragment()).commit();
 
         btn_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if(item.getItemId() == R.id.first_tab){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new FirstFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new HomeFragment()).commit();
                 }else if(item.getItemId() == R.id.second_tab){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new SecondFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new WatchFragment()).commit();
              }else if(item.getItemId() == R.id.third_tab){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new ThirdFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new ProfileFragment()).commit();
                 }else if(item.getItemId() == R.id.fourth_tab){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new FourthFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new FeedFragment()).commit();
                 }else if(item.getItemId() == R.id.five_tab){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new FiveFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new NotiFiveFragment()).commit();
                 }/*else if(item.getItemId() == R.id.six_tab){
                     getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout,new SecondFragment()).commit();
                 }*/
-                return false;
+                return true;
             }
         });
 
-    tab.addTab(mB);
     }
 }

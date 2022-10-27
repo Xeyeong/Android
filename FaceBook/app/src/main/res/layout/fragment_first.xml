@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".num1.FirstFragment">
+    tools:context=".num1_home.HomeFragment">
 
     <!-- 헤더 -->
     <RelativeLayout
@@ -90,6 +90,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="릴스"/>
+
     </com.google.android.material.tabs.TabLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_recv"/>
 
 </LinearLayout>

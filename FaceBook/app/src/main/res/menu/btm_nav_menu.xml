@@ -35,14 +35,14 @@
         android:id="@+id/five_tab"
         android:icon="@drawable/ic_baseline_notifications_none_24"
         android:title="알림"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:enabled="true"
         android:iconTint="@color/white"/>
-<!--    <item
+<!--<item
         android:id="@+id/six_tab"
         android:icon="@drawable/ic_baseline_menu_24"
         android:title="메뉴"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:enabled="true"
         android:iconTint="@color/white"/>-->
 </menu>
