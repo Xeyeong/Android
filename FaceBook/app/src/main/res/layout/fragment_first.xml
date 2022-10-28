@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     tools:context=".num1_home.HomeFragment">
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <!-- 헤더 -->
     <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -43,6 +46,8 @@
 
     <!-- 무슨생각을 하고 계신가요? -->
     <RelativeLayout
+        android:id="@+id/header2"
+        android:layout_below="@id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -72,6 +77,8 @@
 
     <!-- 밑줄선 -->
     <View
+        android:id="@+id/header3"
+        android:layout_below="@+id/header2"
         android:layout_width="match_parent"
         android:layout_height="9dp"
         android:background="#181819"/>
@@ -79,22 +86,41 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
-        android:layout_height="70dp">
+        android:layout_height="70dp"
+        android:layout_below="@id/header3">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="스토리"
-            />
+            android:text="스토리" />
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="릴스"/>
+            android:text="릴스" />
 
     </com.google.android.material.tabs.TabLayout>
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/first_recv"/>
+    <!-- 밑줄선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/first_recv">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#181819"/>
 
-</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_recv2"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

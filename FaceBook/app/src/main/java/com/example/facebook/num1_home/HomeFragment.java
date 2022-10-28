@@ -26,6 +26,7 @@ public class HomeFragment extends Fragment {
     MainAdapter  adapter2;
     ArrayList<Integer> list = new ArrayList<>();
     ArrayList<Integer> list2 = new ArrayList<>();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,9 +41,59 @@ public class HomeFragment extends Fragment {
         list.add(R.drawable.story2);
         list.add(R.drawable.story3);
         list.add(R.drawable.story4);
+        list.add(R.drawable.story5);
+        list.add(R.drawable.story6);
+        list.add(R.drawable.story7);
+        list.add(R.drawable.story8);
+        list.add(R.drawable.story9);
+        list.add(R.drawable.story10);
+        list.add(R.drawable.story2);
+        list.add(R.drawable.story3);
+        list.add(R.drawable.story4);
+        list.add(R.drawable.story5);
+        list.add(R.drawable.story6);
+        list.add(R.drawable.story7);
+        list.add(R.drawable.story8);
+        list.add(R.drawable.story9);
+        list.add(R.drawable.story10);
+        list.add(R.drawable.story2);
+        list.add(R.drawable.story3);
+        list.add(R.drawable.story4);
+        list.add(R.drawable.story5);
+        list.add(R.drawable.story6);
+        list.add(R.drawable.story7);
+        list.add(R.drawable.story8);
+        list.add(R.drawable.story9);
+        list.add(R.drawable.story10);
 
-        list2.add(R.drawable.ic_baseline_home_24);
-
+        list2.add(R.drawable.reels1);
+        list2.add(R.drawable.reels2);
+        list2.add(R.drawable.reels3);
+        list2.add(R.drawable.reels4);
+        list2.add(R.drawable.reels5);
+        list2.add(R.drawable.reels6);
+        list2.add(R.drawable.reels7);
+        list2.add(R.drawable.reels8);
+        list2.add(R.drawable.reels9);
+        list2.add(R.drawable.reels10);
+        list2.add(R.drawable.reels2);
+        list2.add(R.drawable.reels3);
+        list2.add(R.drawable.reels4);
+        list2.add(R.drawable.reels5);
+        list2.add(R.drawable.reels6);
+        list2.add(R.drawable.reels7);
+        list2.add(R.drawable.reels8);
+        list2.add(R.drawable.reels9);
+        list2.add(R.drawable.reels10);
+        list2.add(R.drawable.reels2);
+        list2.add(R.drawable.reels3);
+        list2.add(R.drawable.reels4);
+        list2.add(R.drawable.reels5);
+        list2.add(R.drawable.reels6);
+        list2.add(R.drawable.reels7);
+        list2.add(R.drawable.reels8);
+        list2.add(R.drawable.reels9);
+        list2.add(R.drawable.reels10);
 
         adapter = new MainAdapter(inflater, list);
         adapter2 = new MainAdapter(inflater, list2);
