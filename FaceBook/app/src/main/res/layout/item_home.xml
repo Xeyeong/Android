@@ -2,10 +2,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content">
+    <!--상단-->
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/reout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp">
 
@@ -13,21 +14,147 @@
             android:id="@+id/img1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/home_img1"/>
+            android:src="@drawable/home_img1" />
+
         <TextView
-            android:id="@id/dd"
-            android:layout_toRightOf="@id/img1"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/img1"
             android:text="신선놀음: 이모털 월드"
-            android:textSize="13dp"/>
+            android:textColor="#fff"
+            android:textSize="15dp" />
 
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_toRightOf="@id/img1"
+            android:text="회원님을 위한 추천"
+            android:textColor="#D6D6D6"
+            android:textSize="10dp" />
 
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_below="@id/tv1"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv2"
+            android:src="@drawable/home_item3" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/home_item2" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv1"
+            android:src="@drawable/home_item1" />
     </RelativeLayout>
-
-    <ImageView
-        android:layout_width="wrap_content"
+    <!-- 내용 -->
+    <LinearLayout
+        android:id="@+id/Ll1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/home_img1_1"/>
+        android:layout_below="@id/reout"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수묵화풍 방치형 수련 RPG" />
+
+        <ImageView
+            android:id="@+id/Contentiv1"
+            android:layout_width="wrap_content"
+            android:layout_height="415dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/home_img1_1" />
+    </LinearLayout>
+    <!--하단-->
+    <RelativeLayout
+        android:id="@+id/Ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ll1"
+        android:layout_marginTop="35dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_item4" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/Ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_item5"
+            android:layout_marginRight="15dp"/>
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아요"
+            android:textColor="#A2A2A2" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_item6"
+            android:layout_marginRight="15dp"/>
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글 달기"
+            android:textColor="#A2A2A2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_item7"
+            android:layout_marginRight="15dp"/>
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공유하기"
+            android:textColor="#A2A2A2"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>

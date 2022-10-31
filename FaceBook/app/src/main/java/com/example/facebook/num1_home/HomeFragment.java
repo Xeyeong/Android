@@ -22,10 +22,13 @@ public class HomeFragment extends Fragment {
     FragmentActivity activity;
     TabLayout tab;
     RecyclerView recyclerView;
+    RecyclerView recyclerView2;
     MainAdapter adapter;
     MainAdapter  adapter2;
+    HomeContentAdapter adapter3;
     ArrayList<Integer> list = new ArrayList<>();
     ArrayList<Integer> list2 = new ArrayList<>();
+    ArrayList<HomeContentDTO> list3 = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,7 +37,9 @@ public class HomeFragment extends Fragment {
         activity = HomeFragment.super.getActivity();
         View v = inflater.inflate(R.layout.fragment_first, container, false);
         recyclerView = v.findViewById(R.id.first_recv);
+        recyclerView2 = v.findViewById(R.id.first_recv2);
         tab = v.findViewById(R.id.tab);
+
 
 
         list.add(R.drawable.story1);
@@ -95,8 +100,14 @@ public class HomeFragment extends Fragment {
         list2.add(R.drawable.reels9);
         list2.add(R.drawable.reels10);
 
+        list3.add(new HomeContentDTO(R.drawable.home_img1,R.drawable.home_img1_1,"fuck","fucking","fucking2"));
+        list3.add(new HomeContentDTO(R.drawable.home_img1,R.drawable.home_img1_1,"fuck","fucking","fucking2"));
+        list3.add(new HomeContentDTO(R.drawable.home_img1,R.drawable.home_img1_1,"fuck","fucking","fucking2"));
+        list3.add(new HomeContentDTO(R.drawable.home_img1,R.drawable.home_img1_1,"fuck","fucking","fucking2"));
+
         adapter = new MainAdapter(inflater, list);
         adapter2 = new MainAdapter(inflater, list2);
+        adapter3 = new HomeContentAdapter(inflater, list3);
 
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false);
         recyclerView.setLayoutManager(manager);
@@ -124,12 +135,10 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        RecyclerView.LayoutManager manager1 = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
+        recyclerView2.setLayoutManager(manager1);
 
-
-
-
-
-
+        recyclerView2.setAdapter(adapter3);
 
 
         return v;
