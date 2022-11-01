@@ -18,14 +18,20 @@
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/drawable/item_homehomehomehomehomehome.xml" value="0.1859375" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/activity_test.xml" value="0.1" />
-        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_first.xml" value="0.33" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_frag_pager_adapter.xml" value="0.19322916666666667" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_second.xml" value="0.23541666666666666" />
-        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_home.xml" value="0.49239766081871345" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_story_reels.xml" value="0.18229166666666666" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_third.xml" value="0.178125" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/fragment_watch.xml" value="0.25" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_home.xml" value="0.5" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_home_post.xml" value="0.34791666666666665" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_noti.xml" value="0.5" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_reels.xml" value="0.18177083333333333" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_stor.xml" value="0.23541666666666666" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_story.xml" value="0.23541666666666666" />
+        <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/item_watch_header.xml" value="0.5" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/layout/menu.xml" value="0.13697916666666668" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/menu/bottom_menu.xml" value="0.19947916666666668" />
         <entry key="..\:/Study_Android/WorkSpace/FaceBook/app/src/main/res/menu/btm_nav_menu.xml" value="0.25" />

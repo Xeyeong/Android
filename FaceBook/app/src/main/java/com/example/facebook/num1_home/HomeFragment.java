@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         activity = HomeFragment.super.getActivity();
-        View v = inflater.inflate(R.layout.fragment_first, container, false);
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
         recyclerView = v.findViewById(R.id.first_recv);
         recyclerView2 = v.findViewById(R.id.first_recv2);
         tab = v.findViewById(R.id.tab);

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<FrameLayout
+    android:layout_width="60dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/noti_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_img1"/>
+    <ImageView
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/noti_img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_item3"/>
+
+</FrameLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한선님이 꿀잼저장소 그룹에 게시물을 올렸습니다"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="11분"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_item1"/>
+    </LinearLayout>
+</RelativeLayout>

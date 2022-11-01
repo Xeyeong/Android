@@ -84,17 +84,20 @@
     </LinearLayout>
     <!--하단-->
     <RelativeLayout
+        android:layout_marginLeft="20dp"
         android:id="@+id/Ll2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/Ll1"
         android:layout_marginTop="35dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/home_item4" />
     </RelativeLayout>
     <LinearLayout
+        android:id="@+id/bottombar"
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
         android:layout_below="@id/Ll2"
@@ -103,18 +106,17 @@
     <LinearLayout
         android:layout_weight="1"
         android:gravity="center"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/home_item5"
             android:layout_marginRight="15dp"/>
         <TextView
 
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="좋아요"
@@ -125,13 +127,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/home_item6"
             android:layout_marginRight="15dp"/>
-        <TextView
 
-            android:textSize="20dp"
+        <TextView
+            android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="댓글 달기"
@@ -143,18 +145,40 @@
             android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/home_item7"
             android:layout_marginRight="15dp"/>
         <TextView
-
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="공유하기"
             android:textColor="#A2A2A2"/>
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#65676a" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#181819" />
     </LinearLayout>
 </RelativeLayout>
