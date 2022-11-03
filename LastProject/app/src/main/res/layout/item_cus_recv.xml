@@ -70,7 +70,7 @@
                     android:backgroundTint="#4B4B4B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="전화번호"/>
+                    android:text="정보삭제"/>
                 </LinearLayout>
 
             </LinearLayout>

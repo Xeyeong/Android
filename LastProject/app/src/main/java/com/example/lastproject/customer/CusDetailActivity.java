@@ -70,6 +70,7 @@ public class CusDetailActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 vo.setAddr(edt_addr.getText()+"");
                 vo.setPhone(edt_phone.getText()+"");
 
@@ -78,7 +79,7 @@ public class CusDetailActivity extends AppCompatActivity {
                 askTask.excuteAsk(new CommonAskTask.AsynckTaskCallback() {
                     @Override
                     public void onResult(String data, boolean isResult) {
-                        if(isResult && data.equals("1")){
+                        if(isResult && data.equals("화긴")){
                             finish();
                         }else{
                             Toast.makeText(CusDetailActivity.this, "실패", Toast.LENGTH_LONG).show();

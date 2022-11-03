@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LastProject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".customer.CusDeleteActivity"
+            android:exported="true" />
+        <activity
             android:name=".customer.CusDetailActivity"
             android:exported="true" />
         <activity
