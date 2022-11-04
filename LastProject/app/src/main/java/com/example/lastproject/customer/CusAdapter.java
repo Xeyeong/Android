@@ -1,16 +1,21 @@
 package com.example.lastproject.customer;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.lastproject.MainActivity;
 import com.example.lastproject.R;
+import com.example.lastproject.last.CommonAskTask;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
@@ -18,10 +23,14 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.vh> {
     // LayoutInflater <= 화면을 칸마다 붙이기 위한 객체.
     LayoutInflater inflater;
     ArrayList<CustomerVO> list;
+    MainActivity activity;
+    CusFragment fragment;
 
-    public CusAdapter(LayoutInflater inflater, ArrayList<CustomerVO> list) {
+    public CusAdapter(LayoutInflater inflater, ArrayList<CustomerVO> list, MainActivity activity, CusFragment fragment) {
         this.inflater = inflater;
         this.list = list;
+        this.activity = activity;
+        this.fragment = fragment;
     }
 
     @NonNull
@@ -58,6 +67,21 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.vh> {
                 h.tv_name.getContext().startActivity(intent);
             }
         });
+        h.btn_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //삭제 로직 ( 화면 x ) And = spring 요청 == > CommonAsk
+                CommonAskTask askTask = new CommonAskTask("delete.cu", activity);
+                askTask.addParam("id", 10);
+                askTask.addParam("vo", new Gson().toJson(list.get(a)));
+                askTask.excuteAsk(new CommonAskTask.AsynckTaskCallback() {
+                    @Override
+                    public void onResult(String data, boolean isResult) {
+                       fragment.cus_select();
+                    }
+                });
+            }
+        });
     }
 
     @Override
@@ -71,12 +95,13 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.vh> {
 
         public vh(@NonNull View v) {
             super(v);
-        tv_name = v.findViewById(R.id.tv_name);
-        tv_tel = v.findViewById(R.id.tv_tel);
-        btn_detail = v.findViewById(R.id.btn_detail);
-        btn_modify = v.findViewById(R.id.btn_modify);
-        btn_delete = v.findViewById(R.id.btn_delete);
+            tv_name = v.findViewById(R.id.tv_name);
+            tv_tel = v.findViewById(R.id.tv_tel);
+            btn_detail = v.findViewById(R.id.btn_detail);
+            btn_modify = v.findViewById(R.id.btn_modify);
+            btn_delete = v.findViewById(R.id.btn_delete);
 
         }
+
     }
 }

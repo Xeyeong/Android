@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.lastproject.MainActivity;
 import com.example.lastproject.R;
 import com.example.lastproject.last.CommonAskTask;
 import com.google.gson.Gson;
@@ -38,6 +39,7 @@ public class CusFragment extends Fragment {
 
     // 레트로핏을 이용해서 데이터 가져오기(Spring)
     public void cus_select(){
+
         CommonAskTask askTask = new CommonAskTask("list.cu", getContext());
         askTask.excuteAsk(new CommonAskTask.AsynckTaskCallback() {
             @Override
@@ -48,7 +50,7 @@ public class CusFragment extends Fragment {
                     ArrayList<CustomerVO> list = new Gson().fromJson(data, new TypeToken<ArrayList<CustomerVO>>(){}.getType());
                     Log.d("고객", "onResult: " + list.size());
 
-                    adapter = new CusAdapter(getLayoutInflater(), list);
+                    adapter = new CusAdapter(getLayoutInflater(), list, (MainActivity) getActivity(), CusFragment.this);
                     RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
                     recv_cus.setLayoutManager(manager);
                     recv_cus.setAdapter(adapter);
